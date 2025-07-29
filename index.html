@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visionary</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --text-color: #e2e8f0; /* Slate 200 */
+        --text-color-dim: #94a3b8; /* Slate 400 */
+        --container-bg: rgba(255, 255, 255, 0.1);
+        --card-bg: rgba(255, 255, 255, 0.15);
+        --input-bg: rgba(255, 255, 255, 0.2);
+        --primary-color: #8b5cf6; /* Violet 500 */
+        --primary-color-hover: #7c3aed; /* Violet 600 */
+        --heading-color: #a78bfa; /* Violet 300 */
+      }
+      .light {
+        --text-color: #1e293b; /* Slate 800 */
+        --text-color-dim: #475569; /* Slate 600 */
+        --container-bg: rgba(255, 255, 255, 0.7);
+        --card-bg: #ffffff;
+        --input-bg: #f8fafc; /* Slate 50 */
+        --primary-color: #8b5cf6;
+        --primary-color-hover: #7c3aed;
+        --heading-color: #6d28d9; /* Violet 700 */
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        transition: background 0.7s ease-in-out;
+        color: var(--text-color);
+      }
+      .font-montserrat { font-family: 'Montserrat', sans-serif; }
+      
+      .bg-welcome { background-image: url('https://i.ibb.co/xTYnsLB/Sunset-Motivation-for-Personal-Growth.png'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+      .light .bg-welcome { background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); }
+
+      .bg-home { background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%); }
+      .light .bg-home { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+
+      .bg-mindset { background: linear-gradient(135deg, #00416A 0%, #E4E5E6 100%); }
+      .light .bg-mindset { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); }
+      
+      .bg-ai { background: linear-gradient(135deg, #1D2B64 0%, #F8CDDA 100%); }
+      .light .bg-ai { background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); }
+
+      .bg-analysis { background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%); }
+      .light .bg-analysis { background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); }
+
+      .bg-settings { background: linear-gradient(135deg, #607D8B 0%, #9E9E9E 100%); }
+      .light .bg-settings { background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); }
+
+      .bg-history { background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); }
+      .light .bg-history { background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+      
+      .bg-conversationHistory { background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%); }
+      .light .bg-conversationHistory { background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); }
+
+      .bg-performanceCoach { background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); }
+      .light .bg-performanceCoach { background: linear-gradient(to right, #6a85b6 0%, #bac8e0 100%); }
+      
+      .intermediate-slide-anim { background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%); }
+      .intermediate-text-anim { background: linear-gradient(45deg, #FFD700, #FF8C00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 1.5s infinite alternate; }
+       @keyframes pulse {
+            from { transform: scale(1); opacity: 0.9; }
+            to { transform: scale(1.05); opacity: 1; }
+       }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0",
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react/": "https://esm.sh/react@18.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-welcome">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

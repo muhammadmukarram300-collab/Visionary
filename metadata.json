@@ -1,0 +1,8 @@
+{
+  "name": "Visionary",
+  "description": "An application to help you track your atomic visions, analyze your progress, and gain insights into your mindset using AI. Become the visionary of your own life by building positive habits and reflecting on your journey.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": ""
+}
